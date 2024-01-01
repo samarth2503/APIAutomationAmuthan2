@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Booking Test Suite" thread-count="2" verbose="3">
+
+	<listeners>
+		<listener class-name = "com.tmb.Listener.TestListener.java" />
+	</listeners>
+	
+	<test parallel = "methods" name="Booking Test">
+		<classes>
+			<class name="com.test.PostTest" />
+				<methods>
+					<include name = "PostCallTest" />
+					<include name = "postRequestUsingExternalJson" />
+				</methods>
+		</classes>
+	</test>
+</suite>
